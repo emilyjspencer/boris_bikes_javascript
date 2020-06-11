@@ -19,6 +19,11 @@ describe('DockingStation', function() {
         expect(function() { dockingstation.release(bike); }).toThrowError('No bikes available');
       });
 
+      it('raises an error if the bike to be released is broken', function() {
+        bike.break()
+        expect(function() { dockingstation.release(bike); }).toThrowError('Unable to release bike')
+      });
+
     });
 
 

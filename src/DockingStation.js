@@ -8,17 +8,24 @@ class DockingStation {
   }
   
   release(bike) {
+    if(bike.works === false) {
+        throw new Error("Unable to release bike")
+      }
     if(this.bikes.length === 0) {
       throw new Error("No bikes available")
-    }  
+    } 
+    
     return this.bikes.pop()
   }
     
   dock(bike) {
-    if(this.bikes.length === 20) {
+    if(this.bikes.length >= 20) {
       throw new Error("Docking Station full")
     }
     return this.bikes.push(bike)
   }
 
-}
+  
+
+};
+
