@@ -1,9 +1,12 @@
 
 class DockingStation {
   
-  release(bike) {
+  release() {
     return bike 
   }
     
+  dock(bike) {
+    return bike 
+  }
 
 }
