@@ -12,7 +12,7 @@ class DockingStation {
   }
     
   dock(bike) {
-    if(this.bikes.length ===1) {
+    if(this.bikes.length === 20) {
       throw new Error("Docking Station full")
     }
     return this.bikes.push(bike)
