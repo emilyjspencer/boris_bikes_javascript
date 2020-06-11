@@ -4,7 +4,7 @@ class DockingStation {
     this.bikes = []
   }
   
-  release() {
+  release(bike) {
     return bike 
   }
     
