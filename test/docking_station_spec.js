@@ -11,7 +11,8 @@ describe('DockingStation', function() {
     describe('release', function() {
       it ('can release a working bike', function() {
         dockingstation.dock(bike)
-        expect(dockingstation.release(bike)).toEqual(bike)
+        dockingstation.release(bike)
+        expect(dockingstation.bikes).toEqual([])
       });
 
       it('raises an error when there are no bikes available', function() {
