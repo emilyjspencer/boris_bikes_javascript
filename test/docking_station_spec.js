@@ -38,5 +38,12 @@ describe('DockingStation', function() {
 
     })
     
+    describe('capacity', function() {
+      it( 'has a default capacity that can be overwritten', function() {
+        let testdockingstation = new DockingStation(30)
+        expect(dockingstation.capacity).toEqual(30)
+      })
+    })
+  
 
 });
