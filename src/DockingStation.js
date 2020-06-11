@@ -5,7 +5,9 @@ class DockingStation {
   }
   
   release(bike) {
-    return bike 
+    if(this.bikes.length === 0) {
+      throw new Error("No bikes available")
+    }    return bike 
   }
     
   dock(bike) {

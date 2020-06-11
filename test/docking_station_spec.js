@@ -14,7 +14,9 @@ describe('DockingStation', function() {
         expect(dockingstation.release(bike)).toEqual(bike)
       });
 
-      
+      it('raises an error when there are no bikes available', function() {
+        expect(function() { dockingstation.release(bike); }).toThrowError('No bikes available');
+      });
 
     });
 
