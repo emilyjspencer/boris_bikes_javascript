@@ -27,6 +27,12 @@ describe('DockingStation', function() {
         dockingstation.dock(bike)
         expect(dockingstation.bikes.length).toEqual(1)
       })
+
+      it('raises an error when full', function() {
+        dockingstation.dock(bike)
+        expect(function() { dockingstation.dock(bike); }).toThrowError('Docking Station full');  
+      });
+      
     })
     
 
