@@ -1,5 +1,10 @@
 ## Boris Bikes
 
+* A simple OOP application that emulates the Santender Cycles (formerly Barclays Cycle Hire), and more popularly known as Boris bikes, a the public bicycle hire scheme in London 
+
+* This application was test-driven using JavaScript and the Jasmine testing framework
+* Demonstrates principles such as encaspulation, tdd, dry code
+
 
 ### User Stories
 
@@ -42,3 +47,41 @@ I'd like docking stations to accept returning bikes (broken or not).
 
 
 ```
+## How to run
+
+* Clone the project - git clone https://github.com/emilyjspencer/boris_bikes_javascript.git
+* Cd into the repo
+* Open the SpecRunner in the browser. Use Chrome if you have it
+* Open the Chrome Developer Tools and click on the Console.
+* Enter the following into the console to instantiate the objects:
+
+```html
+dockingstation = new DockingStation()
+bike = new Bike()
+```
+The following methods can then be called on the objects:
+```html
+dockingstation.dock_bike(bike)
+dockingstation.release_bike()
+bike.report_broken()
+bike.break()
+bike.working()
+```
+
+
+## View the tests
+
+* Open the SpecRunner in the browser to view the tests. 
+* You should see that all tests are passing 
+
+
+## Built with:
+
+* JavaScript
+* Jasmine
+
+## Tested with:
+
+* Jasmine
+
+
