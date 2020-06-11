@@ -1,5 +1,6 @@
 
 class DockingStation {
+    
   constructor(bikes) {
     this.bikes = []
   }
