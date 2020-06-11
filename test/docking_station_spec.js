@@ -17,7 +17,8 @@ describe('DockingStation', function() {
       it('can dock a bike', function() {
         dockingstation = new DockingStation()
         bike = new Bike()
-        expect(dockingstation.dock(bike)).toEqual(bike)
+        dockingstation.dock(bike)
+        expect(dockingstation.bikes.length).toEqual(1)
       })
     })
     
