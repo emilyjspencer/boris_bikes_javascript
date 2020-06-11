@@ -41,6 +41,12 @@ describe('DockingStation', function() {
         expect(function() { dockingstation.dock(bike); }).toThrowError('Docking Station full');
       });
 
+      it('can dock a bike whether it is broken or not', function() {
+        bike.break()
+        dockingstation.dock(bike)
+        expect(dockingstation.bikes.length).toEqual(1)
+      });
+
     })
     
     describe('capacity', function() {
