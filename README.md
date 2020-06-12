@@ -3,7 +3,6 @@
 * A simple OOP application that emulates the Santender Cycles (formerly Barclays Cycle Hire), and more popularly known as Boris bikes, a public bicycle hire scheme in London 
 
 * This application was test-driven using JavaScript and the Jasmine testing framework
-* Demonstrates principles such as encaspulation, tdd, dry code
 
 
 ### User Stories
